@@ -1,0 +1,121 @@
+html {
+    scroll-behavior: smooth;
+}
+p {
+    font-size: 18px;
+}
+.bg-primary {
+    background-color: #333333 !important;
+}
+.bg-blue {
+    background-color: #2690d4;
+}
+.bg-grey {
+    background-color: #333333;
+}
+.bg-black {
+    background-color: #000;
+}
+.bg-grey-light {
+    background-color: #eaeaea;
+}
+.container-section {
+    max-width: 900px;
+    margin: auto;
+}
+.container-image {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1,
+    p,
+    .btn-secondary {
+        position: relative;
+    }
+    p {
+        margin: 30px;
+    }
+
+    &::before {
+        content: "";
+        opacity: 0.5;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+        background-size: cover;
+        background-color: #333333;
+    }
+    .btn-secondary {
+        padding: 20px 30px;
+        border-radius: none !important;
+        border: 1px solid gray;
+        &:hover {
+            background-color: #eaeaea !important;
+            color: black;
+        }
+    }
+}
+.section-two {
+    padding-bottom: 20px;
+    img {
+        position: relative;
+        width: 100%;
+        &:hover {
+            opacity: 0.3;
+        }
+    }
+
+    .col {
+        width: 32%;
+        .card-body {
+            background-color: white;
+        }
+    }
+}
+.section-three {
+    padding: 70px;
+}
+
+footer {
+    a {
+        color: #0d79d4;
+    }
+}
+@media screen and (min-width: 700px) {
+    .wrap-text {
+        columns: 2;
+    }
+}
+@media screen and (max-width: 800px) {
+    .section-two {
+        padding: 20px;
+    }
+    .section-cards {
+        flex-direction: column;
+
+        .col {
+            width: 100%;
+        }
+    }
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
