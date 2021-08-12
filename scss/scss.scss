@@ -30,18 +30,12 @@ p {
     background-size: cover;
     background-position: center;
     background-image: url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    h1,
-    p,
-    .btn-secondary {
+    .mydiv {
         position: relative;
-    }
-    p {
-        margin: 30px;
-    }
+        p {
+            margin: 30px;
+        }
+    }        
 
     &::before {
         content: "";
@@ -51,7 +45,6 @@ p {
         right: 0px;
         bottom: 0px;
         left: 0px;
-        opacity: 0.5;
         background-size: cover;
         background-color: #333333;
     }
@@ -90,6 +83,16 @@ footer {
     a {
         color: #0d79d4;
     }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
 }
 @media screen and (min-width: 700px) {
     .wrap-text {
@@ -109,13 +112,4 @@ footer {
     }
 }
 
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
-}
+
